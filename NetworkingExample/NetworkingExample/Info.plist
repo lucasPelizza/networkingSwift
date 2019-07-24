@@ -48,11 +48,8 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-<<<<<<< HEAD
-=======
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
->>>>>>> develop
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

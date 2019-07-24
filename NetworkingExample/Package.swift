@@ -9,7 +9,7 @@ let package = Package(
             targets: ["NetworkingExample"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/lucasPelizza/networkingSwift", from: "0.2.0")
+        .package(url: "https://github.com/lucasPelizza/networkingSwift", from: "0.0.1")
     ],
     targets: [
         .target(
