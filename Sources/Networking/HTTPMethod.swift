@@ -1,9 +1,8 @@
 //
 //  HTTPMethod.swift
-//  SwiftUI News
+//  Networking
 //
-//  Created by Lucas Pelizza on 13/07/2019.
-//  Copyright © 2019 Lucas Pelizza. All rights reserved.
+//  Created by Lucas Pelizza on 24/07/2019.
 //
 
 public enum HTTPMethod : String {

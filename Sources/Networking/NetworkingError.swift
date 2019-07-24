@@ -1,14 +1,13 @@
 //
-//  NetworkResponseError.swift
-//  SwiftUI News
+//  NetworkingError.swift
+//  Networking
 //
-//  Created by Lucas Pelizza on 13/07/2019.
-//  Copyright © 2019 Lucas Pelizza. All rights reserved.
+//  Created by Lucas Pelizza on 24/07/2019.
 //
 
 import Foundation
 
-public enum NetworkResponseError: Error {
+public enum NetworkingError: Error {
     case authenticationError
     case badRequest
     case outdated
@@ -16,10 +15,13 @@ public enum NetworkResponseError: Error {
     case noData
     case unableToDecode
     case networkMissing
-
+    case parametersNil
+    case encodingFailed
+    case missingURL
+    
 }
 
-extension NetworkResponseError: LocalizedError {
+extension NetworkingError: LocalizedError {
     public var errorDescription: String? {
         switch self {
         case .authenticationError:
@@ -36,6 +38,12 @@ extension NetworkResponseError: LocalizedError {
             return "Decode failed"
         case .networkMissing:
             return "Please check your network connection"
+        case .parametersNil:
+            return "Parameters were nil."
+        case .encodingFailed:
+            return "Parameter encoding failed."
+        case .missingURL:
+            return "URL is nil."
         }
     }
 }
