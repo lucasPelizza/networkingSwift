@@ -17,7 +17,7 @@ public protocol APIServices {
 }
 
 extension APIServices {
-    func fetch<T:Decodable>(urlParameters: [URLQueryItem]? = nil,
+    public func fetch<T:Decodable>(urlParameters: [URLQueryItem]? = nil,
                             session: URLSession = URLSession.shared,
                             completionHandler: @escaping (Result<T, NetworkingError>) -> Void) -> URLSessionTask? {
         do {
@@ -36,7 +36,7 @@ extension APIServices {
         }
     }
     
-    func post<T:Decodable>(bodyParameters: [String:Any]?,
+    public func post<T:Decodable>(bodyParameters: [String:Any]?,
                            session: URLSession = URLSession.shared,
                            completionHandler: @escaping (Result<T, NetworkingError>) -> Void) -> URLSessionTask? {
         
